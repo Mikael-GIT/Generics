@@ -14,12 +14,13 @@ public class Program {
 		int n = sc.nextInt();
 		
 		for (int i = 0; i < n; i++) {
-			String value = sc.nextLine();
+			Integer value = sc.nextInt();
 			ps.addValue(value);
 		}
 
 		ps.print();
-		String x = ps.first();
+		Integer x = ps.first(); //Problema de Type safety quando utilizamos o Object como generico, nao e a melhor implementacao
+        //pois para nao dar este erro precisa ficar fazendo casting, nesse caso de string para (Integer) e afins
 		System.out.println("First: " + x);
 		
 		sc.close();

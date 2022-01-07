@@ -3,7 +3,7 @@ package domain.services;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PrintService {
+public class PrintServiceString {
     private List<String> list = new ArrayList<>();
 
 	public void addValue(String value) {
